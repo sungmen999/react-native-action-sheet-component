@@ -145,7 +145,7 @@ class ActionSheet extends Component {
     BackHandler.addEventListener(HARDWARE_BACK_PRESS_EVENT, this.hardwareBackPressHandler);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (this.props.show !== nextProps.show) {
       if (nextProps.show) {
         this.show();
